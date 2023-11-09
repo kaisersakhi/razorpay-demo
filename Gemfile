@@ -66,3 +66,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "razorpay", "~> 3.1"
