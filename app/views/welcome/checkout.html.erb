@@ -1,5 +1,9 @@
-<div>
+<% content_for :head do  %>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<% end %>
+
+<div data-controller="razorpay">
   <h2>Checkout page</h2>
   <p>Total payable amount is : 999</p>
-  <button>Pay</button>
+  <button data-action="razorpay#checkout">Pay</button>
 </div>
