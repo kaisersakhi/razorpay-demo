@@ -2,7 +2,7 @@
   <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 <% end %>
 
-<div data-controller="razorpay">
+<div data-controller="razorpay" data-razorpay-form-id-value="<%= @resource_id %>">
   <h2>Checkout page</h2>
   <p>Total payable amount is : 999</p>
   <button data-action="razorpay#checkout">Pay</button>

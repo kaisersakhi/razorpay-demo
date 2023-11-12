@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
   root "welcome#checkout"
+
+  resources :razorpay_orders, only: %i[create]
 end
